@@ -5,6 +5,7 @@ const Child = (props) => {
     return (
         <div>
             <h1>Menghitung dari Komponent anak: {props.countChild}</h1>
+            <button onClick={props.handleAnak}>Mengubah nilai anak</button>
         </div>
     )
 }

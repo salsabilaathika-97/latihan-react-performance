@@ -9,12 +9,16 @@ function App() {
   const handleCount = () => {
     setCount(count + 1);
   }
+
+  const handleAnak = () => {
+    setCountChild(countChild + 1);  
+  }
   return (
     <div className="App">
       <h1>Parent Component</h1>
       <h1>Menghitung : {count}</h1>
       <button onClick={handleCount}>Mengubah nilai</button>
-      <Child countChild = {countChild} />
+      <Child handleAnak={handleAnak} countChild = {countChild} />
       <Son />
     </div>
   );
