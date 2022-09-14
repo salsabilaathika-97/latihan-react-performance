@@ -1,7 +1,7 @@
 import './App.css';
-import {useState, useCallback} from "react";
-import Child from './components/Child';
-import Son from './components/Son';
+import React, {useState, useCallback} from "react";
+const Child = React.lazy(() => import ('./components/Child'));
+const Son = React.lazy(() => import ('./components/Son'));
 
 function App() {
   const [count, setCount] = useState(0);
