@@ -1,3 +1,5 @@
+import {memo} from "react";
+
 const Child = (props) => {
     console.log("Komponen anak");
     return (
@@ -7,4 +9,4 @@ const Child = (props) => {
     )
 }
 
-export default Child;
+export default memo(Child);
